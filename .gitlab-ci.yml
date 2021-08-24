@@ -3,8 +3,8 @@ stages:
 
 before_script:
   - wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
-  - tar -xzf -C /usr/local ./go1.17.linux-amd64.tar.gz
-  - export PATH=$PATH:/usr/local/go/bin
+  - tar -xzf ./go1.17.linux-amd64.tar.gz
+  - export PATH=$PATH:`pwd`/go/bin
 
 
 build:
